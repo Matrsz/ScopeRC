@@ -66,7 +66,7 @@ stream = audio.open(
 t = arange(0, ts*BUFF, ts)
 F = fft.fftfreq(BUFF, ts)
 F = split(F,2)[0]
-Threshold = 100
+Threshold = 50
 
 #Funciones de identificación y ordenamiento de picos
 def getPeak(data, treshold):
